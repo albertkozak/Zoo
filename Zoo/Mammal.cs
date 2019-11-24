@@ -26,5 +26,16 @@ namespace Zoo
             }
             return input;
         }
+
+        public void GetMammalMeal(double mammalWeight, double servingSizeRatio, string serving, string feedTime)
+        {
+            Console.WriteLine("\nMeal Recommendation");
+            Console.WriteLine("-------------------");
+            Console.WriteLine("Mammal Type: ");
+            Console.WriteLine("Species: ");
+            Console.WriteLine("Weight:     " + mammalWeight + " KG");
+            Console.WriteLine("Serving:     " + mammalWeight * servingSizeRatio + " KG " + serving);
+            Console.WriteLine("Instructions: Keep area secure at all times." + feedTime);
+        }
     }
 }
