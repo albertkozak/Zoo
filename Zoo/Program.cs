@@ -5,6 +5,7 @@ namespace Zoo
     class Program
     {
         private Bear bear = new Bear();
+        private Monkey monkey = new Monkey();
         public string getUserInput()
         {
             Console.WriteLine("================");
@@ -16,7 +17,7 @@ namespace Zoo
             Console.Write("Selection: \n");
             string input = Console.ReadLine();
             if (input == "1") {
-                // this.monkey.GetMonkey();
+                this.monkey.GetMonkey();
             }
             else if (input == "2") {
                 this.bear.GetBear();
