@@ -24,7 +24,7 @@ namespace Zoo
                 Console.WriteLine("Weight cannot be zero! \n");
                 this.GetMammalWeight();
             }
-            return input;
+            return Math.Round(input, 2);
         }
 
         public void GetMammalMeal(string mammalType, string species, double mammalWeight, double servingSizeRatio, string serving, string feedTime) {
@@ -33,7 +33,7 @@ namespace Zoo
             Console.WriteLine("Mammal Type:  " + mammalType);
             Console.WriteLine("Species:      " + species);
             Console.WriteLine("Weight:       " + mammalWeight + " KG");
-            Console.WriteLine("Serving:      " + mammalWeight * servingSizeRatio + " KG " + serving);
+            Console.WriteLine("Serving:      " + Math.Round((mammalWeight * servingSizeRatio),3) + " KG " + serving);
             Console.WriteLine("\nInstructions: Keep area secure at all times.\n");
             Console.WriteLine(feedTime);
         }

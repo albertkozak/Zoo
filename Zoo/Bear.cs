@@ -15,7 +15,7 @@ namespace Zoo
             Console.WriteLine("2. Polar");
             Console.WriteLine("Selection: \n");
             string input = Console.ReadLine();
-            string feedTime = " Feed at 9AM and 3PM.";
+            string feedTime = "Feed at 9AM and 3PM.";
             string mammalType = "Bear";
             string species = "";
             if (input == "1") {
