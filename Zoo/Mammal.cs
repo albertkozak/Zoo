@@ -17,12 +17,12 @@ namespace Zoo
                 Console.WriteLine("Invalid input for weight! \n");
                 GetMammalWeight();
             }
-            if (input < 0) {
-                Console.WriteLine("Weight cannot be zero! \n");
-                this.GetMammalWeight();
+            if (input > 0) {
+                mammalWeight = input;
             }
             else {
-                mammalWeight = input;
+                Console.WriteLine("Weight cannot be zero! \n");
+                this.GetMammalWeight();
             }
             return input;
         }
