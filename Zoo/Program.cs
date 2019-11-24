@@ -6,8 +6,7 @@ namespace Zoo
     {
         private Bear bear = new Bear();
         private Monkey monkey = new Monkey();
-        public string getUserInput()
-        {
+        public string getUserInput() {
             Console.WriteLine("================");
             Console.WriteLine("Zoo Menu Planner");
             Console.WriteLine("================");
@@ -23,7 +22,7 @@ namespace Zoo
                 this.bear.GetBear();
             }
             else if (input == "3") {
-                Console.WriteLine("To exit, press ENTER one more time. \n");
+                Console.WriteLine("To exit, press \"3\" + ENTER again. \n");
             }
             else {
                 Console.WriteLine("Invalid input!");
