@@ -30,7 +30,11 @@ namespace Zoo
             return input;
         }
         static void Main(string[] args) {
- 
+            Program program = new Program();
+            Console.WriteLine("Press ENTER to launch Zoo Meal Planner.");
+            while(Console.ReadLine() != "3") {
+                program.getUserInput();
+            }
         }
     }
 }
