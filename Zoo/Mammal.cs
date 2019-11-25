@@ -6,10 +6,10 @@ namespace Zoo
 {
     class Mammal
     {
+        double input = 0;
         public double GetMammalWeight() {
             double mammalWeight;
             Console.WriteLine("Weight in KG: \n");
-            double input = 0;
             try {
                 input = Convert.ToDouble(Console.ReadLine());
             }
